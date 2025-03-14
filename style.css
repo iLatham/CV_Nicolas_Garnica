@@ -39,7 +39,7 @@ body {
 
 /* Fin modo oscuro */
 
-/* Barra de navegación */
+/* Barra de navegacion */
 
 .navbar {
     background-color: #fff;
@@ -109,7 +109,7 @@ body {
     transform: scaleX(1);
 }
 
-/* Barra de navegación */
+/* Barra de navegacion */
 
 /* Tarjetas */
 
@@ -166,7 +166,7 @@ div.container {
     padding: 10px 30px;
 }
 
-/* Sección Información Personal */ 
+/* Seccion Informacion Personal */ 
 
 section.info {
     padding-bottom: 30px;
@@ -184,7 +184,7 @@ section.info ul li {
     margin: 0 20px;
 }
 
-/* Sección Experiencia Laboral */ 
+/* Seccion Experiencia Laboral */ 
 
 section.experience {
     padding-bottom: 30px;
@@ -225,6 +225,49 @@ section.experience div.exp-list table tr td h3 {
 section.experience div.exp-list table tr td h5 {
     padding-left: 10px;
 }
+
+/* Seccion Educacion */ 
+
+section.education {
+    padding-bottom: 30px;
+}
+
+section.education div.edu-list {
+    width: 90%;
+    margin: auto;
+    padding: 20px 0 10px 0;
+}
+
+section.education div.edu-list table tr td {
+    cursor: pointer;
+    padding: 30px 0;
+}
+
+section.education div.edu-list table tr td:first-child {
+    padding: 5px 0;
+}
+
+section.education div.edu-list table tr td:first-child {
+    width: 30%;
+}
+
+section.education div.edu-list table tr td:last-child {
+    width: 70%;
+    padding-bottom: none;
+}
+
+section.education div.edu-list table tr td img {
+    width: 140px;
+}
+
+section.education div.edu-list table tr td h3 {
+    padding-bottom: 10px;
+}
+
+section.education div.edu-list table tr td h5 {
+    padding-left: 10px;
+}
+
 
 /* Footer */
 
