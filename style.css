@@ -39,6 +39,8 @@ body {
 
 /* Fin modo oscuro */
 
+/* Barra de navegación */
+
 .navbar {
     background-color: #fff;
     padding: 15px 20px;
@@ -107,6 +109,10 @@ body {
     transform: scaleX(1);
 }
 
+/* Barra de navegación */
+
+/* Tarjetas */
+
 div.container {
     position: relative;
     left: 0;
@@ -122,7 +128,6 @@ div.container {
 .card {
     display: flex;
     width: 900px;
-    height: 250px;
     background: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
@@ -160,6 +165,68 @@ div.container {
     text-align: justify;
     padding: 10px 30px;
 }
+
+/* Sección Información Personal */ 
+
+section.info {
+    padding-bottom: 30px;
+}
+
+section.info ul {
+    display: flex;
+    list-style-type: disc;
+    padding: 20px 10px 10px 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+section.info ul li {
+    margin: 0 20px;
+}
+
+/* Sección Experiencia Laboral */ 
+
+section.experience {
+    padding-bottom: 30px;
+}
+
+section.experience div.exp-list {
+    width: 90%;
+    margin: auto;
+    padding: 20px 0 10px 0;
+}
+
+section.experience div.exp-list table tr td {
+    cursor: pointer;
+    padding: 30px 0;
+}
+
+section.experience div.exp-list table tr td:first-child {
+    padding: 5px 0;
+}
+
+section.experience div.exp-list table tr td:first-child {
+    width: 30%;
+}
+
+section.experience div.exp-list table tr td:last-child {
+    width: 70%;
+    padding-bottom: none;
+}
+
+section.experience div.exp-list table tr td img {
+    width: 140px;
+}
+
+section.experience div.exp-list table tr td h3 {
+    padding-bottom: 10px;
+}
+
+section.experience div.exp-list table tr td h5 {
+    padding-left: 10px;
+}
+
+/* Footer */
 
 .footer {
     background-color: #111;
