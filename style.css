@@ -7,10 +7,40 @@
 body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;    
     background-color: #f4f4f4;
+    transition: background-color 0.3s ease;
 }
 
+/* Modo oscuro */
+
+.dark-mode {
+    background-color: #333;
+}
+
+.dark-mode body {
+    background-color: #222;
+}
+
+.dark-mode nav {
+    background-color: #222;
+}
+
+.dark-mode nav ul li a {
+    color: #fff;
+}
+
+.dark-mode nav ul li a::after {
+    background: white;
+}
+
+.dark-mode nav ul li:last-child button {
+    background-color: #f4f4f4;
+    color: #000;
+}
+
+/* Fin modo oscuro */
+
 .navbar {
-    background: rgba(0, 0, 0, 0.8);
+    background-color: #fff;
     padding: 15px 20px;
     display: flex;
     justify-content: center;
@@ -20,6 +50,8 @@ body {
     top: 0;
     left: 0;
     z-index: 1;
+    transition: background-color 0.3s ease;
+    border-bottom: 1px solid;
 }
 
 .navbar ul {
@@ -31,9 +63,29 @@ body {
     margin: 0 30px;
 }
 
+.navbar ul li:last-child {
+    border: none;
+    cursor: pointer;
+}
+
+.navbar ul li:last-child button {
+    margin-top: -5px;
+    background-color: #333;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    width: 120px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    height: 30px;
+    right: 0;
+}
+
 .navbar ul li a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 15px;
     position: relative;
     padding-bottom: 5px;
@@ -46,7 +98,7 @@ body {
     bottom: 0;
     width: 100%;
     height: 2px;
-    background: white;
+    background: black;
     transform: scaleX(0);
     transition: transform 0.3s ease-in-out;
 }
