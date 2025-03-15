@@ -345,6 +345,23 @@ section.skills {
     color: #606060;
 }
 
+/* Seccion Proyectos */ 
+
+section.projects {
+    padding-bottom: 30px;
+}
+
+section.projects ul {
+    list-style-type: disc;
+    padding: 20px 10px 10px 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+section.projects ul li {
+    margin: 5px 40px;
+}
+
 /* Footer */
 
 .footer {
