@@ -276,8 +276,13 @@ section.skills {
 
 .skills-list {
     display: flex;
-    width: 420px;
-    padding: 50px 0;
+    align-items: center;
+}
+
+.html, .css, .js {
+    display: flex;
+    width: 33%;
+    padding: 30px 0;
     border-radius: 8px;
     background: #fff;
     row-gap: 30px;
@@ -285,31 +290,53 @@ section.skills {
     align-items: center;
 }
 
-.circular-progress{
+.circular-progress-html, .circular-progress-css, .circular-progress-js {
     position: relative;
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
-    background: conic-gradient(red 3.6deg, #ededed 0deg);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.circular-progress::before{
+.circular-progress-html {
+    background: conic-gradient(red 3.6deg, #ededed 0deg);
+}
+
+.circular-progress-css {
+    background: conic-gradient(blue 3.6deg, #ededed 0deg);
+}
+
+.circular-progress-js {
+    background: conic-gradient(purple 3.6deg, #ededed 0deg);
+}
+
+.circular-progress-html::before, .circular-progress-css::before, .circular-progress-js::before {
     content: "";
     position: absolute;
-    height: 210px;
-    width: 210px;
+    height: 160px;
+    width: 160px;
     border-radius: 50%;
     background-color: #fff;
 }
 
-.progress-value{
+.progress-value-html, .progress-value-css, .progress-value-js {
     position: relative;
     font-size: 40px;
     font-weight: 600;
+}
+
+.progress-value-html {
     color: red;
+}
+
+.progress-value-css {
+    color: blue;
+}
+
+.progress-value-js {
+    color: purple;
 }
 
 .text{
